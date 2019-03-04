@@ -1,0 +1,184 @@
+/*
+@font-face {
+	font-family: 'Museo Sans Cyrl 300';
+	src: url('fonts/MuseoSans/MuseoSansCyrl-300.eot');
+	src: url('fonts/MuseoSans/MuseoSansCyrl-300.woff') format('woff'),
+		url('fonts/MuseoSans/MuseoSansCyrl-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	}*/
+
+	@font-face {
+		font-family: 'Museo Sans Cyrl 100';
+		src: url('fonts/MuseoSans/MuseoSansCyrl-100.eot');
+		src: url('fonts/MuseoSans/MuseoSansCyrl-100.woff') format('woff'),
+		url('fonts/MuseoSans/MuseoSansCyrl-100.ttf') format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
+
+
+	:root {
+		/*	--font-title: 'Museo Sans Cyrl 300', sans-serif;*/
+		--font: 'Museo Sans Cyrl 100', sans-serif;
+
+
+	}
+
+	* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		outline: none;
+		box-sizing: border-box;
+		transition: all .3s ease-in-out;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	body, html {
+		min-height: 100%;
+		width: 100%;
+	}
+
+	.clear::after, .clear::before {
+		content: " ";
+		display: table;
+	}
+
+	.clear::after {
+		clear: both;
+	}
+
+	/* Main Styles */
+
+	body { 
+		background: url(../images/bg.jpg) no-repeat;
+		background-size: cover; 
+		font-family: var(--font);
+
+	}
+
+	.container { 
+		width: 100%;
+		max-width: 730px;
+		margin:0 auto;
+		padding: 0 20px;
+		background: #111a28;
+		margin-top: 110px;
+		border-radius: 10px;}
+
+		.header { 
+			height: 76px;
+			padding: 20px 0 15px 20px;
+			}
+
+			.header__logo { 
+				display: flex;
+			justify-content: left;
+			}
+
+
+			.content { 
+				display: flex; }
+
+		.product { 
+				}
+
+				.product__img { 
+					padding: 65px 80px 65px 30px;
+				}
+				.product__variants { 
+					display: flex;
+					justify-content: center;
+					margin-bottom: 20px;
+					font-size: 30px;
+				}
+
+				.product__item--is--active { 
+					color: #1f273f;
+					padding: 3px;
+				}
+				.product__item--is--active:hover { 
+					border: 2px solid #7e838b; }
+
+					.product__item-white {  
+						color: #ffffff;
+						padding: 3px;
+					}
+					.product__item-red { 
+						color: #ed3333;
+						padding: 3px;
+					}
+					.product__item-blue { 
+						color: #29e3ea;
+						padding: 3px;
+					}
+
+					.description { 
+						color: #e1e1e1;
+					}
+
+					.description__title { 
+						font-size: 24px;
+						margin-bottom: 15px;
+						letter-spacing: .2;
+						font-family: var(--font);
+
+					}
+					.description__about { 
+						font-size: 14px;
+						opacity: .54;
+						margin-bottom: 25px;
+
+					}
+
+					.description__stars {
+						display: flex;
+						margin-bottom: 27px;
+
+					}
+
+					.description__stars--vol { 
+						color: #f7bf16;
+					}
+
+					.description__stars--vol1 { 
+						color: #9da1a6;
+					}
+
+					.description__select { 
+
+
+					}
+
+
+					.description_select-size,
+					.description_select-qty { 
+						padding: 10px;
+						background: #111a28;
+						border:1px solid #4f5560;
+						color: #9da1a6;
+						margin-bottom: 30px;
+					}
+					.select__opt {  }
+
+
+					.select__qty { 
+					}
+
+					.description__form{ 
+					 }
+
+
+					.description__btn { 
+						height: 40px;
+						width: 185px;
+						border: 1px solid;
+						border-color: #4f5560;
+						background: #202835;
+						color: #9da1a6; 
+						cursor: pointer;}
