@@ -92,7 +92,6 @@
 				padding: 65px 80px 65px 30px;
 			}
 
-			/**/
 			.product__variants { 
 				display: flex;
 				justify-content: space-between;
@@ -110,12 +109,12 @@
 				
 
 			}
-			    .product__item-grey { 
-			    background: #1f273f; }
+			.product__item-grey { 
+				background: #1f273f; }
 
 				.product__item-white {  
 					background: #ffffff;
-				
+					
 				}
 				.product__item-red { 
 					background: #ed3333;
@@ -129,8 +128,7 @@
 				.product__item--is--active:hover { 
 					border: 1px solid #7e838b;
 					transform: scale(1.5);}
-					/**/
-
+					
 					.description { 
 						color: #e1e1e1;
 					}
